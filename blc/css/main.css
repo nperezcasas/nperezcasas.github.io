@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  background-color:beige;
 }
 
 /*
@@ -88,7 +89,7 @@ textarea {
    ========================================================================== */
 
 h1 {
-  color: olive;
+  color: whitesmoke;
 }
 
 ul {
@@ -98,13 +99,26 @@ ul {
 }
 
 #container{
-  background-color: #999;
-  max-width: 600px;
+  background-color:rgb(103, 136, 114);
+  max-width: 400px;
   margin:0 auto;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
+body{
+  padding: 15px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+iframe{
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  border: 5px solid olive;
+  display:block;
+  margin:auto;
+}
 
 
 /* ==========================================================================
