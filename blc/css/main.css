@@ -92,9 +92,53 @@ h1 {
   color: whitesmoke;
 }
 
-h2{
-  position: relative;
+.navbar {
+  overflow: hidden;
+  background-color: rgb(146, 3, 3);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: beige;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+/* unvisited link */
+a:link {
+  color: rgb(88, 0, 0);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: beige;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
 
 ul {
@@ -114,9 +158,9 @@ img{
 
 #container{
   background-color:rgb(146, 3, 3);
-  max-width: 400px;
+  max-width: 100%;
   margin:0 auto;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -124,8 +168,12 @@ img{
   text-align: right;
 }
 
-body{
+#mainbody{
   padding: 15px;
+}
+
+body{
+  padding: 0px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
