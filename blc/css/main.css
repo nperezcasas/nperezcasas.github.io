@@ -92,6 +92,10 @@ h1 {
   color: whitesmoke;
 }
 
+h2{
+  text-align: center;
+}
+
 .navbar {
   overflow: hidden;
   background-color: rgb(146, 3, 3);
