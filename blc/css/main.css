@@ -89,7 +89,7 @@ textarea {
    ========================================================================== */
 
 h1 {
-  color: whitesmoke;
+  color: beige;
 }
 
 h2{
@@ -108,7 +108,7 @@ h2{
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: beige;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -117,7 +117,7 @@ h2{
 /* Change background on mouse-over */
 .navbar a:hover {
   background: beige;
-  color: black;
+  color: rgb(146, 3, 3);
 }
 
 /* Main content */
@@ -132,12 +132,12 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: rgb(255, 255, 255);
+  color: beige;
 }
 
 /* mouse over link */
 a:hover {
-  color: beige;
+  color: rgb(56, 0, 0);
 }
 
 /* selected link */
@@ -161,6 +161,7 @@ img{
 
 #container{
   background-color:rgb(146, 3, 3);
+  color:beige;
   max-width: 100%;
   margin:0 auto;
   padding: 20px;
