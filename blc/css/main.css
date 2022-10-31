@@ -127,12 +127,12 @@ h2{
 
 /* unvisited link */
 a:link {
-  color: rgb(88, 0, 0);
+  color: beige;
 }
 
 /* visited link */
 a:visited {
-  color: beige;
+  color: rgb(167, 167, 149);
 }
 
 /* mouse over link */
