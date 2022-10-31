@@ -96,6 +96,10 @@ h2{
   text-align: center;
 }
 
+hr{
+  background-color: rgb(146, 3, 3);
+}
+
 .navbar {
   overflow: hidden;
   background-color: rgb(146, 3, 3);
