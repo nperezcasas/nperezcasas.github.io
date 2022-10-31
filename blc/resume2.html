@@ -18,6 +18,9 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap" rel="stylesheet">   
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -28,8 +31,8 @@
         <a href="#education">EDUCATION</a> 
         <a href="#experience">EXPERIENCE</a>
         <a href="#leadership">LEADERSHIP EXPERIENCE</a> 
-        <a href="#technical">TECHNICAL SKILLS</a> 
-        <a href="#awards">AWARDS</a> 
+<!--         <a href="#technical">TECHNICAL SKILLS</a> 
+        <a href="#awards">AWARDS</a>  -->
     </div>
     <section id = "container">
         <h1>Nuria Perez Casas <br/>
@@ -43,6 +46,7 @@
 
   <!-- Add your site or application content here -->
 <section id="mainbody">
+    <div class="column left">
 <section id="education">
 <h3>EDUCATION</h3><hr>
 <p><b>Bethany Lutheran College | Mankato, MN</b><br/>
@@ -99,7 +103,11 @@
   <li>Elected to be a Class of 2023 representative. Selected to manage financial requests and funding for on-campus clubs</li>
 </ul>
 </section>
+</div>
 
+<div class="column right">
+<button type="button" class="collapsible"><h3>TECHNICAL SKILLS & INTERESTS</h3></button>
+<div class="content">
 <section id="technical">
 <h3>TECHNICAL SKILLS</h3><hr>
 <ul>
@@ -114,19 +122,41 @@
 <h3>AWARDS & INTERESTS</h3><hr>
 <ul>
   <li><a style=color:black ; href = "https://ghc.anitab.org/">2022 Grace Hopper Celebration</a> Scholarship Recipient (AnitaB.org. June 2022)</li>
-  <li><b>Interests: </b>ESL Adult Basic Education Volunteer (January 2020-March 2020), Rubik's Cube Competitions (2015-Present),
-    Basketball Coaching (2018-2019), Virtual Hackathons (MLH Global Hack Week 2022, Technica 2021, Technica 2020,
-    TechTogether Boston 2020)</li>
-    <li><b>Languages: </b>English, Spanish, Catalan, French (Beginner)</li>
+  <li><b>Interests: </b>
+    <ul>
+        <li>ESL Adult Basic Education Volunteer (January 2020-March 2020)</li>
+        <li>Rubik's Cube Competitions (2015-Present)</li>
+        <li>Basketball Coaching (2018-2019)</li>
+        <li>Virtual Hackathons
+            <ul>
+                <li>Technica 2022</li>
+                <li>MLH Global Hack Week 2022</li>
+                <li>Technica 2021</li>
+                <li>Technica 2020</li>
+                <li>TechTogether Boston 2020</li>
+            </ul>
+        </li>
+    </ul>
+</li>
+    <li><b>Languages: </b>
+        <ul>
+            <li>English</li>
+            <li>Spanish</li>
+            <li>Catalan</li>
+            <li>French (Beginner)</li>
+        </ul></li>
 </ul>
 </section>
+</div>
+<p></p>
+<img src = "img/IMG_2920_Original.jpg" width="100%" padding="5px">
+</div>
 
-<section id = "pictures">
+<!-- <section id = "pictures">
     <p><img src = "img/BJS04990_Original.jpg">
         <img src = "img/IMG_2875_Original.jpg">
-        <img src = "img/IMG_2920_Original.jpg">
         <img src = "img/IMG_3984_Original.jpg"></p>
-</section>
+</section> -->
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
