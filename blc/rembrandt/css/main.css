@@ -157,6 +157,11 @@ img{
   color: rgba(54, 42, 42);
 }
 
+.column {
+  float: left;
+  padding: 10px;
+}
+
 .info {
   width: 49%;
   float: left;
@@ -167,6 +172,12 @@ img{
   width: 49%;
   float: left;
   padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
 }
 
 * {
