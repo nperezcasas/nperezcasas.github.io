@@ -113,17 +113,18 @@ header h1 {
 .columnbox { 
   margin-top: 30px;
   background-color: #ffd500;
+  color: #1a3e56;
   box-sizing: border-box;
   padding: 2%;
 }
 
 #leftcolumn {
   float: left;
-  width: 50%;
+  width: 56%;
 }
 #rightcolumn {
-  float: left;
-  width: 36%;
+  float: right;
+  width: 40%;
   margin: 0 0 0 20px;
 }
 
@@ -153,62 +154,63 @@ header h1 {
   width: 30%; padding: 3%;
 }
 
+.fa-solid,
+.fa-brands, 
+.fa-sharp-solid {
+  background-color: papayawhip;
+  border-radius: 0.2em;
+  padding: 0.3em;
+}
+
+footer {
+  text-align: center;
+  background-color: #b71234;
+  display: flex;
+  color: white;
+  font-size: .85em;
+  margin-top: 20px;
+}
 
 /*
 Dropdown Menu
 */
-nav#topnav{
-  text-align: center;
-  word-spacing: -.25em;
-  font-size: .75em;
+nav {
+    text-align: center;
 }
 
-
-#topnav a:link, #topnav a:visited {
-    display:inline-block;
-    width: 20%;
-    color: #ffffff;
-    text-decoration: none;
-    line-height: 1.8;
-    transition: color, background-color .25s ease-in;
-}
-
-
-ul#topnav li{
-  color: white;
-  line-height: 3.5;
+ul#topnav li { /* targets only those <li> nested within any <ul» nested inside nav with id of "topnav"*/
+  color: white; /* color for all button text */ 
+  line-height: 3.5; /* sets the height for each nav button */ 
+  width: 20%;
   background-color: #0046ad;
-  display: inline-block;
-  border-radius: 20px;
-  width: 18em;
-  word-spacing: 0em;
-  transition: background .2s ease-in;
+  display: inline-block; /* makes it possible for buttons to sit on the same line */ 
+  border-radius: 20px; /* slightly rounds the corners of the nav buttons width: 18em; /* sets a uniform button width */
+  word-spacing: 0em; /* makes the button text spacing normal - see word-spacing setting above */ 
+  transition: color, background-color .2s ease-in; /* "cool" fade-in effect for button backgrounds  */
+}
+  
+ul#topnav li:hover { /* applies only to buttons when you hover over them with the mouse */
+  color: white; 
+  background-color: #b71234;
+  z-index: 10; /* ensures that the drop-down submenu is on top of the other elements nearby */
+} 
+  /* SUBMENU SPECS - drop-down menu */  
+ul#subnav { /* targets the entire <ul> with id "subnav" */
+  position: absolute; /* makes it possible to move the subnav from its default location */ 
+  left: -1000em; /* places subnav WAY off the left side of the screen - making it "invisible" */ 
+  width: inherit; /* ensures that drop-down buttons are same width as other nav buttons */ 
+  padding: 0; /* CRITICAL! Removes the default indentation subnav would hae otherwise */ 
+  opacity: 0; /* OPTIONAL allows for cool fade-in effect. Initional subnav state is 100% transparent */
 }
 
-ul#topnav li:hover{
-  color: #b1d1e7;
-  background-color: #2f6e98;
-  z-index: 10;
+ul#subnav li {/* targets ONLY the <li> nested in the <ul> with id of "subnav"*/
+  width: 100%; /* sets width of subnav <li> to match it's parent <ul> */ 
+  line-height: inherit; /* ditto */ 
+  font-size: inherit; /* ditto */
 }
-
-ul#subnav {
-  position: absolute;
-  left: -1000em;
-  width: inherit;
-  padding: 0;
-  opacity: 0;
-}
-
-ul#subnav li{
-  width: 100%;
-  line-height: inherit;
-  font-size: inherit;
-}
-
-li:hover ul#subnav{
-  color: #b1d1e7;
-  background-color: #2f6e98;
-  left: auto;
+  
+li:hover ul#subnav { /* targets only teh <li> in <ul with id "subnav" WHEN HOVERING WITH MOUSE */
+  left: auto; /* returns the submenu to its regular location, making it now visible*/
   opacity: 1;
 }
 

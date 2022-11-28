@@ -12,9 +12,13 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://kit.fontawesome.com/b311a47ee4.js" crossorigin="anonymous"></script>
+
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,10 +41,10 @@
        <h1>The Three Best Speedcubers</h1>
     </div>
   
-    <nav>
+    <!-- <nav>
       <ul id="topnav">
-      <li><a href="http://www.youtube.com">YouTube</a></li>
-      <li><a href="http://www.apple.com">Apple Computer</a></li>
+      <li><a href="https://www.worldcubeassociation.org/">WCA</a></li>
+      <li><a href="http://www.apple.com">Cubers</a></li>
       <li><a href="http://www.football.com">Football</a>
       <ul id="subnav">
         <a href="http://www.youtube.com">YouTube</a>
@@ -48,13 +52,24 @@
       </ul></li>
       <li><a href="http://www.wikipedia.com">WikiPedia</a></li>
     </ul>
-    </nav>
+    </nav> -->
+    <nav> 
+      <ul id="topnav">
+      <a href="https://www.worldcubeassociation.org/"><li>World Cube Association</li></a> <!-- first regular (no submenu) link --> 
+      <a href="#cubers"><li>Cubers</li></a> <!-- second regular link -->
+    <li><a style="color:white; text-decoration: none;" href="https://www.netflix.com/title/81092143">Netflix Documentary</a> <!-- Note the empty pathname - this is to trigger the submenu only -->
+      <ul id="subnav"> <!-- NOTE! The entire sub-menu is enclosed in a single <li> -->
+      <a href="https://www.imdb.com/title/tt12038300/"><li>IMBD</li></a> 
+      <a href="https://en.wikipedia.org/wiki/The_Speed_Cubers"><li>Wikipedia</li></a> 
+      <a href="https://www.rottentomatoes.com/m/the_speed_cubers"><li>Rotten Tomatoes</li></a> </ul> <!-- closes the submenu -->
+    </li> <!-- closes the <li> that contains the submenu -->
+    <a href="https://www.youtube.com/watch?v=F-zMjsRgJws&list=PLVE0Oz4ggE92vcVuX_A-EVhCxIIvejJi4&index=1&ab_channel=Rubik%27s"><li>How to Solve it?</li></a> <!-- the fourth regular link --> </ul> </nav>
    </header>
 
   <!-- Add your site or application content here -->
   <article class="columnbox clearfix">
     <section id="leftcolumn">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/-wrTIWx_Z6k?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="100%" height="390" src="https://www.youtube.com/embed/-wrTIWx_Z6k?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     
     <section id="rightcolumn">
@@ -62,21 +77,30 @@
     </section>
   </article>
 
-  <article class="three-things">
+  <article id= "cubers" class="three-things">
     
     <section id="first-thing">
     <div class="circle-box"><img src="img/feliks.jpeg"></div>
-    <p>Rembrandt van Rijn, more commonly known simply as Rembrandt, was one of the most famous and prolific artists in history. He left behind over two thousand known works of art using a variety of media – ninety of which are self-portraits. His life is a rags-to-riches-to-rags story, with more than its share of misfortune.</p>
-     </section>
+    <h3>Feliks Zemdegs</h3>
+    <p>Feliks Aleksanders Zemdegs is an Australian Rubik's Cube speedsolver. He is the only speedcuber ever to win the World Cube Association World Championship twice, winning in 2013 and 2015, and is widely considered the most successful and greatest speedcuber of all time.</p>
+    <a href="https://www.instagram.com/fzemdegs/?hl=en"><i class="fa fa-4x fa-instagram text-primary mb-4"></i></a>
+    <a href="https://www.youtube.com/@fzemdegs"><i class="fa fa-4x fa-youtube text-primary mb-4"></i></a>
+  </section>
       
     <section id="second-thing">
     <div class="circle-box"><img src="img/max.jpeg"></div>
-    <p>Rembrandt van Rijn, more commonly known simply as Rembrandt, was one of the most famous and prolific artists in history. He left behind over two thousand known works of art using a variety of media – ninety of which are self-portraits. His life is a rags-to-riches-to-rags story, with more than its share of misfortune.</p>
-    </section>
+    <h3>Max Park</h3>
+    <p>Max Park is an American Rubik's Cube speedsolver who is currently tied with Tymon Kolasiński of Poland for the world record average of five 3×3×3 solves, 4.86 seconds, set on 24 September 2022. Park first held this record from 23 April 2017 to 28 June 2017 and was the only cuber other than Feliks Zemdegs to hold the record between 27 September 2009 and 5 June 2021.</p>
+    <a href="https://www.instagram.com/maxfast23/?hl=en"><i class="fa fa-4x fa-instagram text-primary mb-4"></i></a>
+    <a href="https://www.youtube.com/@MaxFast23"><i class="fa fa-4x fa-youtube text-primary mb-4"></i></a>
+  </section>
       
     <section id="third-thing">
     <div class="circle-box"><img src="img/dana.jpeg"></div>
-    <p>Rembrandt van Rijn, more commonly known simply as Rembrandt, was one of the most famous and prolific artists in history. He left behind over two thousand known works of art using a variety of media – ninety of which are self-portraits. His life is a rags-to-riches-to-rags story, with more than its share of misfortune.</p>
+    <h3>Dana Yi</h3>
+    <p>Dana Yi is an American speedcuber. She is frequently considered the fastest female speedcuber in cubing history. She is one of the USA's top cubers, with a best average of 5 below 8 seconds for the Rubik's Cube. Another of her strongest events is the Megaminx for which she has won tournaments in the USA.</p>
+    <a href="https://www.instagram.com/danayi.cubing/?hl=en"><i class="fa fa-4x fa-instagram text-primary mb-4"></i></a>
+    <a href="https://www.youtube.com/@DanaYi13"><i class="fa fa-4x fa-youtube text-primary mb-4"></i></a>
     </section>
       
   </article>
@@ -91,6 +115,15 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <footer>
+    <p>
+      <a href="https://beyond-nuria.tech/">
+        <img src="../../assets/img/favicon.ico" alt="Beyond Nuria Logo" style= "max-width: 5em;">
+      </a><br>
+      <br>&copy; Copyright 2021. Nuria Perez Casas.
+    </p>
+  </footer>
 
 </section>
 </body>
