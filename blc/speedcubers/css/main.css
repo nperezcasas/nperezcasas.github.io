@@ -333,7 +333,7 @@ li:hover ul#subnav { /* targets only teh <li> in <ul with id "subnav" WHEN HOVER
     #first-thing { width: 100%; padding: 0; }
     #second-thing { width: 100%; padding: 0; }
     #third-thing { width: 100%; padding: 0; }
-
+}
 
 /* ==========================================================================
    Print styles.
