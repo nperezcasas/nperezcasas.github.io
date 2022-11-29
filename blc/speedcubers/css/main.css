@@ -14,7 +14,7 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.5;
   font-family: 'Rubik', sans-serif;
   background-image:url(../img/background.png);
   background-size: cover;
@@ -87,6 +87,10 @@ textarea {
 }
 img { max-width: 100%;}
 
+h1, h2, h3 {
+  font-weight: 700;
+}
+
 #container {
     max-width: 1300px;
     margin: 0 auto;
@@ -98,15 +102,14 @@ img { max-width: 100%;}
 #logobox { 
   width: 20%;
   float: left;
-  margin-right: 20px;
-}
-
-header{
-  text-align: center;
+  margin-top:20px;
+  margin-left:5em;
+  margin-right: 5em;
 }
 
 header h1 { 
   font-size: 3em;
+  margin-left: 2em;
 }
 
 
@@ -154,22 +157,32 @@ header h1 {
   width: 30%; padding: 3%;
 }
 
-.fa-solid,
-.fa-brands, 
-.fa-sharp-solid {
-  background-color: papayawhip;
+.fa {
   border-radius: 0.2em;
-  padding: 0.3em;
+  padding: 0.5em;
+  display: inline-block;
+  margin: 0px 0px;
+  color: #1a3e56;
 }
 
 footer {
+  padding: 2%;
   text-align: center;
-  background-color: #b71234;
-  display: flex;
-  color: white;
-  font-size: .85em;
+  font-size: .8em;
+  line-height: 2;
+  background-color: #0045ad;
   margin-top: 20px;
+  color:rgb(172, 172, 172);
 }
+
+footer .fa {
+  border-radius: 0.2em;
+  padding: 0.5em;
+  display: inline-block;
+  margin: 0px 0px;
+  color: rgb(172, 172, 172);
+}
+
 
 /*
 Dropdown Menu
@@ -308,6 +321,18 @@ li:hover ul#subnav { /* targets only teh <li> in <ul with id "subnav" WHEN HOVER
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+
+@media only screen and (max-width: 640px) {
+    #logobox { width: 80%; margin: 0 auto; float: none;}
+    #headerfloat h1 { float: none; margin: 20px; text-align: center; line-height: .9; }
+    nav a:link, nav a:visited { width: 20%; font-size: .8em; }
+    #leftcolumn {float: none; width: 100%; }
+    #rightcolumn { float: none; width: 100%; margin: 0; }
+    .three-things { display: block; padding: 2%; }
+    #first-thing { width: 100%; padding: 0; }
+    #second-thing { width: 100%; padding: 0; }
+    #third-thing { width: 100%; padding: 0; }
+
 
 /* ==========================================================================
    Print styles.
