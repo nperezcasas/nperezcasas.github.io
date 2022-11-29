@@ -181,6 +181,7 @@ footer .fa {
   display: inline-block;
   margin: 0px 0px;
   color: rgb(172, 172, 172);
+  max-width: 1em;
 }
 
 
