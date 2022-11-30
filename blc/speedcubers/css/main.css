@@ -237,6 +237,10 @@ li:hover ul#subnav { /* targets only teh <li> in <ul with id "subnav" WHEN HOVER
   display: none !important;
 }
 
+.short-text{
+  display:none;
+}
+
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -333,6 +337,8 @@ li:hover ul#subnav { /* targets only teh <li> in <ul with id "subnav" WHEN HOVER
     #first-thing { width: 100%; padding: 0; }
     #second-thing { width: 100%; padding: 0; }
     #third-thing { width: 100%; padding: 0; }
+    .short-text{display: inline-block;}
+    .full-text{display: none;}
 }
 
 /* ==========================================================================
