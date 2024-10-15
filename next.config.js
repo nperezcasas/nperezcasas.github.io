@@ -7,4 +7,11 @@ const nextConfig = {
     },
   }
   
-  module.exports = nextConfig
+// next.config.js
+module.exports = {
+    output: 'export',
+    basePath: '/nperezcasas.github.io',
+    images: {
+      unoptimized: true,
+    },
+  };
