@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
     output: 'export',
     images: {
         unoptimized: true,
     },
-  }
-  
-  module.exports = nextConfig
+    assetPrefix: '/beyond-nuria-v2/',
+    basePath: '/beyond-nuria-v2',
+}
+
+module.exports = nextConfig
