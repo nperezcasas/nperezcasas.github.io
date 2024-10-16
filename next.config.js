@@ -4,7 +4,9 @@ const nextConfig = {
     swcMinify: true,
     basePath: '/beyond-nuria-v2',
     assetPrefix: '/beyond-nuria-v2/',
-  }
-  
-  module.exports = nextConfig
+    images: {
+        unoptimized: true,
+    },
+}
 
+module.exports = nextConfig

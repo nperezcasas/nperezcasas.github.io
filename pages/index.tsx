@@ -92,7 +92,7 @@ const Home: React.FC = () => {
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <Image
-              src="/beyond-nuria-v2/headshot.jpg"
+              src="/headshot.jpg"
               alt={content.name}
               width={150}
               height={150}
