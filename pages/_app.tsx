@@ -8,10 +8,10 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider attribute="class">
       <Head>
-        <link rel="icon" href="/public/beyond-nuria-v2/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/beyond-nuria-v2/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/beyond-nuria-v2/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/beyond-nuria-v2/apple-touch-icon.png" />
+        <link rel="icon" href="/public/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       </Head>
       <Component {...pageProps} />
     </ThemeProvider>
