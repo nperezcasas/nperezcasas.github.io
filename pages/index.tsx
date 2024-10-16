@@ -22,7 +22,7 @@ Beyond coding, I coach basketball at a local high school, where I aim to inspire
     { 
       title: "Rubik's Cube Math Thesis", 
       description: "Analyzed the mathematical intricacies of the Rubik's cube and its applications to problem-solving, published as my thesis project.",
-      link: "/Math_Thesis_Rubik_s_Cube_Final.pdf"
+      link: "/beyond-nuria-v2/Math_Thesis_Rubik_s_Cube_Final.pdf"
     },
     { 
       title: "Retail App for Andersen Corporation", 
@@ -149,10 +149,10 @@ const Home: React.FC = () => {
               <h2 className="text-3xl font-bold mb-8 text-center dark:text-white">Get in Touch</h2>
               <div className="max-w-3xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6 mb-10">
-                  <a href="/Resume_Nuria_Perez_Oct2024.pdf" target="_blank" rel="noopener noreferrer" className="bg-purple-600 text-white py-2 px-6 rounded-full font-bold hover:bg-purple-500 transition duration-300">
+                  <a href="/beyond-nuria-v2/Resume_Nuria_Perez_Oct2024.pdf" target="_blank" rel="noopener noreferrer" className="bg-purple-600 text-white py-2 px-6 rounded-full font-bold hover:bg-purple-500 transition duration-300">
                     View Resume
                   </a>
-                  <a href="/Resume_Nuria_Perez_Oct2024.pdf" download className="bg-purple-600 text-white py-2 px-6 rounded-full font-bold hover:bg-purple-500 transition duration-300">
+                  <a href="/beyond-nuria-v2/Resume_Nuria_Perez_Oct2024.pdf" download className="bg-purple-600 text-white py-2 px-6 rounded-full font-bold hover:bg-purple-500 transition duration-300">
                     Download Resume
                   </a>
                 </div>
