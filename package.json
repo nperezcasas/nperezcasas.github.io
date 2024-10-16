@@ -2,13 +2,21 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
   "homepage": "https://nperezcasas.github.io/",
+=======
+  "homepage": "https://nperezcasas.github.io/beyond-nuria-v2",
+>>>>>>> 2411647 (Initial commit)
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+<<<<<<< HEAD
     "export": "next build && next export"
+=======
+    "export": "next build && next export && node fix-paths.js && touch out/.nojekyll"
+>>>>>>> 2411647 (Initial commit)
   },
   "dependencies": {
     "framer-motion": "^11.11.9",

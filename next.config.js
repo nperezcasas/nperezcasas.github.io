@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+<<<<<<< HEAD
     reactStrictMode: true,
     output: 'export',
     images: {
@@ -15,3 +16,16 @@ module.exports = {
       unoptimized: true,
     },
   };
+=======
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  assetPrefix: '/beyond-nuria-v2/',
+  basePath: '/beyond-nuria-v2',
+  reactStrictMode: true,
+  swcMinify: true,
+}
+
+module.exports = nextConfig
+>>>>>>> 2411647 (Initial commit)
