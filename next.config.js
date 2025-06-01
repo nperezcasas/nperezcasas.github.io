@@ -4,6 +4,7 @@ const nextConfig = {
     swcMinify: true,
     basePath: '/beyond-nuria-v2',
     assetPrefix: '/beyond-nuria-v2/',
+    output: 'export',
     images: {
         unoptimized: true,
     },
