@@ -20,7 +20,8 @@ Outside of tech, I coach high school basketball, compete in Rubik's cube competi
     { 
       title: "SmartChef", 
       description: "An AI-powered iOS app that generates weekly meal plans based on your preferences, dietary goals, and kitchen appliances. Built with Swift and AWS Amplify (AppSync, S3, Cognito, Lambda), SmartCartChef helps users eat healthier, save time, and reduce food waste.",
-      link: "https://gosmartchef.com"
+      link: "https://gosmartchef.com",
+      testflight: "https://testflight.apple.com/join/1sezcg8g"
     },
     { 
       title: "CS221: AI-Optimized Weekly Menu Generator (Stanford University)", 
@@ -137,7 +138,7 @@ const Home: React.FC = () => {
                     <div>
                       {/* Icon/Badge */}
                       <div className="absolute top-4 right-4">
-                        {project.title.includes('SmartCartChef') && (
+                        {project.title === 'SmartChef' && (
                           <span className="inline-block bg-green-100 text-green-700 dark:bg-green-800 dark:text-green-200 text-xs font-semibold px-3 py-1 rounded-full">AI App</span>
                         )}
                         {project.title.includes('CS221') && (
@@ -155,10 +156,10 @@ const Home: React.FC = () => {
                     </div>
                     {/* Conditional Buttons */}
                     <div className="flex flex-col space-y-3 mt-2">
-                      {project.title === 'SmartCartChef' && (
+                      {project.title === 'SmartChef' && (
                         <>
                           <a
-                            href="https://testflight.apple.com/join/your-beta-link" // Replace with actual TestFlight link
+                            href={project.testflight}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-green-600 text-white py-2 px-4 rounded-full font-bold hover:bg-green-500 transition duration-300 text-center"
@@ -166,7 +167,7 @@ const Home: React.FC = () => {
                             Try the beta
                           </a>
                           <a
-                            href="https://gosmartchef.com"
+                            href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-blue-600 text-white py-2 px-4 rounded-full font-bold hover:bg-blue-500 transition duration-300 text-center"
