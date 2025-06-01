@@ -2,7 +2,6 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nperezcasas.github.io/beyond-nuria-v2",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
