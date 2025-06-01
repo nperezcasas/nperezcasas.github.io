@@ -11,23 +11,30 @@ import ParticleBackground from '../components/ParticleBackground'
 const content = {
   name: 'Nuria Perez',
   title: 'Software Engineer | AI Enthusiast | Problem Solver',
-  about: `Hi, I'm Nuria, a software engineer passionate about leveraging artificial intelligence, technology, and data to make the world a better place. Growing up in Spain, I developed a strong sense of community and a desire to improve lives through meaningful innovation. With a background in mathematics and computer science, I'm driven by curiosity and the belief that AI holds the potential to solve some of the world's toughest challenges—from optimizing resource use to improving health outcomes.
+  about: `Hi, I'm Nuria, a software engineer passionate about using artificial intelligence, technology, and data to improve lives. I grew up in Spain and now live in the U.S., where I work as a software engineer and study computer science through Georgia Tech's OMSCS program.
 
-Beyond coding, I coach basketball at a local high school, where I aim to inspire the next generation of leaders. I also love solving complex puzzles at Rubik's cube competitions and exploring healthy living through non-processed foods and home cooking. Whether in my professional or personal life, I'm always seeking ways to contribute to the world through creativity, learning, and technology-driven solutions.`,
+I recently launched SmartCartChef—an AI-powered iOS app that creates personalized weekly meal plans based on your dietary preferences, kitchen appliances, and available ingredients. I built it entirely in my free time to help people eat better with less stress.
+
+Outside of tech, I coach high school basketball, compete in Rubik's cube competitions, and enjoy cooking non-processed meals at home. I'm driven by curiosity and the belief that practical, human-centered tech can make a meaningful impact.`,
   projects: [
     { 
+      title: "SmartChef", 
+      description: "An AI-powered iOS app that generates weekly meal plans based on your preferences, dietary goals, and kitchen appliances. Built with Swift and AWS Amplify (AppSync, S3, Cognito, Lambda), SmartCartChef helps users eat healthier, save time, and reduce food waste.",
+      link: "https://gosmartchef.com"
+    },
+    { 
       title: "CS221: AI-Optimized Weekly Menu Generator (Stanford University)", 
-      description: "An AI-based app designed to optimize weekly meal planning based on cost, nutrition, and available appliances. This project, developed as part of Stanford University's CS221 course, aims to help people save time and reduce food waste through intelligent meal scheduling and ingredient optimization." 
+      description: "An early prototype that evolved into SmartCartChef. Developed as part of Stanford University's CS221 course, this project laid the groundwork for using AI to optimize meal planning based on cost, nutrition, and available appliances." 
+    },
+    { 
+      title: "B2B Sales App for Andersen", 
+      description: "Worked on an iOS app using Swift and Objective-C to assist affiliate retailers in managing sales for Andersen windows and doors." 
     },
     { 
       title: "Rubik's Cube Math Thesis", 
       description: "Analyzed the mathematical intricacies of the Rubik's cube and its applications to problem-solving, published as my thesis project.",
       link: "/beyond-nuria-v2/Math_Thesis_Rubik_s_Cube_Final.pdf"
-    },
-    { 
-      title: "Retail App for Andersen Corporation", 
-      description: "Worked on an iOS app using Swift and Objective-C to assist affiliate retailers in managing sales for Andersen windows and doors." 
-    },
+    }
   ],
   socials: {
     github: 'https://github.com/nperezcasas',
@@ -109,7 +116,9 @@ const Home: React.FC = () => {
             <div className="container mx-auto px-4">
               <h2 className="text-3xl font-bold mb-8 text-center dark:text-white">About Me</h2>
               <div className="max-w-3xl mx-auto">
-                <p className="text-gray-700 dark:text-gray-300 mb-4 text-justify">{content.about}</p>
+                {content.about.split('\n').map((paragraph, idx) => (
+                  <p key={idx} className="text-gray-700 dark:text-gray-300 mb-4 text-justify">{paragraph}</p>
+                ))}
               </div>
             </div>
           </section>
@@ -121,21 +130,62 @@ const Home: React.FC = () => {
               <h2 className="text-3xl font-bold mb-8 text-center dark:text-white">My Projects</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {content.projects.map((project, index) => (
-                  <div key={index} className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 flex flex-col justify-between">
+                  <div
+                    key={index}
+                    className="bg-white dark:bg-gray-700 rounded-2xl shadow-lg p-8 flex flex-col justify-between border border-gray-200 dark:border-gray-600 hover:shadow-2xl transition-shadow duration-300 relative group"
+                  >
                     <div>
+                      {/* Icon/Badge */}
+                      <div className="absolute top-4 right-4">
+                        {project.title.includes('SmartCartChef') && (
+                          <span className="inline-block bg-green-100 text-green-700 dark:bg-green-800 dark:text-green-200 text-xs font-semibold px-3 py-1 rounded-full">AI App</span>
+                        )}
+                        {project.title.includes('CS221') && (
+                          <span className="inline-block bg-blue-100 text-blue-700 dark:bg-blue-800 dark:text-blue-200 text-xs font-semibold px-3 py-1 rounded-full">Prototype</span>
+                        )}
+                        {project.title.includes('Andersen') && (
+                          <span className="inline-block bg-yellow-100 text-yellow-700 dark:bg-yellow-800 dark:text-yellow-200 text-xs font-semibold px-3 py-1 rounded-full">B2B</span>
+                        )}
+                        {project.title.includes('Rubik') && (
+                          <span className="inline-block bg-purple-100 text-purple-700 dark:bg-purple-800 dark:text-purple-200 text-xs font-semibold px-3 py-1 rounded-full">Academic</span>
+                        )}
+                      </div>
                       <h3 className="text-xl font-semibold mb-2 dark:text-white">{project.title}</h3>
-                      <p className="text-gray-600 dark:text-gray-300 text-justify mb-4">{project.description}</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-justify mb-6">{project.description}</p>
                     </div>
-                    {project.link && (
-                      <a 
-                        href={project.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="bg-purple-600 text-white py-2 px-4 rounded-full font-bold hover:bg-purple-500 transition duration-300 text-center"
-                      >
-                        Read full thesis
-                      </a>
-                    )}
+                    {/* Conditional Buttons */}
+                    <div className="flex flex-col space-y-3 mt-2">
+                      {project.title === 'SmartCartChef' && (
+                        <>
+                          <a
+                            href="https://testflight.apple.com/join/your-beta-link" // Replace with actual TestFlight link
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-green-600 text-white py-2 px-4 rounded-full font-bold hover:bg-green-500 transition duration-300 text-center"
+                          >
+                            Try the beta
+                          </a>
+                          <a
+                            href="https://gosmartchef.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-blue-600 text-white py-2 px-4 rounded-full font-bold hover:bg-blue-500 transition duration-300 text-center"
+                          >
+                            Visit site
+                          </a>
+                        </>
+                      )}
+                      {project.title === "Rubik's Cube Math Thesis" && project.link && (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-purple-600 text-white py-2 px-4 rounded-full font-bold hover:bg-purple-500 transition duration-300 text-center"
+                        >
+                          Read full thesis
+                        </a>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
