@@ -21,7 +21,7 @@ Outside of tech, I coach high school basketball, compete in Rubik's cube competi
       title: "SmartChef", 
       description: "An AI-powered iOS app that generates weekly meal plans based on your preferences, dietary goals, and kitchen appliances. Built with Swift and AWS Amplify (AppSync, S3, Cognito, Lambda), SmartCartChef helps users eat healthier, save time, and reduce food waste.",
       link: "https://gosmartchef.com",
-      testflight: "https://testflight.apple.com/join/1sezcg8g"
+      testflight: "https://apps.apple.com/us/app/gosmartchef/id6746528130"
     },
     { 
       title: "CS221: AI-Optimized Weekly Menu Generator (Stanford University)", 
@@ -164,7 +164,7 @@ const Home: React.FC = () => {
                             rel="noopener noreferrer"
                             className="bg-green-600 text-white py-2 px-4 rounded-full font-bold hover:bg-green-500 transition duration-300 text-center"
                           >
-                            Try the beta
+                            Download on App Store
                           </a>
                           <a
                             href={project.link}
